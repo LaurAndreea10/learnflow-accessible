@@ -1,0 +1,69 @@
+/*
+  Linguax Accessible: Learn Languages
+  Certificate print stylesheet starter
+
+  Usage idea:
+  - Inline or link this CSS when printing the certificate view.
+  - Add a Save / Print button that calls window.print().
+*/
+
+@page {
+  size: A4 landscape;
+  margin: 12mm;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #16110a !important;
+    font-family: Georgia, 'Times New Roman', serif !important;
+  }
+
+  header,
+  nav,
+  .voicebar,
+  .btn,
+  .skip,
+  .no-print {
+    display: none !important;
+  }
+
+  .wrap,
+  .panel {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .certificate {
+    min-height: 165mm;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: #fff8e8 !important;
+    color: #16110a !important;
+    border: 10px double #8a5a00 !important;
+    border-radius: 24px !important;
+    padding: 24mm !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  .certificate h1 {
+    font-size: 34pt !important;
+    margin: 8mm 0 !important;
+  }
+
+  .certificate h2 {
+    font-size: 24pt !important;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .certificate p {
+    font-size: 14pt !important;
+  }
+}
