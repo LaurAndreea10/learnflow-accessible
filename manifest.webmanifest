@@ -1,53 +1,29 @@
 {
-  "name": "Linguax Accessible: Learn Languages",
+  "name": "Linguax Accessible",
   "short_name": "Linguax",
-  "description": "Learn English, Romanian and basic sign language with accessibility-first lessons.",
+  "description": "Accessible language learning with voice support, focus mode and bilingual lessons.",
   "start_url": "/learnflow-accessible/",
   "scope": "/learnflow-accessible/",
   "display": "standalone",
-  "orientation": "portrait-primary",
-  "background_color": "#09090f",
-  "theme_color": "#09090f",
-  "lang": "en",
-  "categories": ["education", "accessibility", "language-learning"],
+  "background_color": "#071226",
+  "theme_color": "#2563eb",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "icons/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-192.svg",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
-      "type": "image/svg+xml",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
-      "src": "icons/icon-512.svg",
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
-      "src": "icons/maskable-512.svg",
+      "src": "icons/maskable-512.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "maskable"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Start learning",
-      "short_name": "Learn",
-      "url": "/learnflow-accessible/#app-start",
-      "description": "Start a Linguax accessible lesson"
-    },
-    {
-      "name": "Accessibility profile",
-      "short_name": "Access",
-      "url": "/learnflow-accessible/#accessibility",
-      "description": "Choose high contrast, voice support, focus mode or large text"
     }
   ]
 }
