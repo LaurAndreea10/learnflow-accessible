@@ -1,12 +1,25 @@
-# Play Store Screenshot Checklist
+# Google Play Screenshot Checklist
 
-Recommended final app name:
+Final public app name:
 
 **Linguax Accessible: Learn Languages**
 
-Use 6 to 8 screenshots. Keep the same visual style, same device frame and clear short captions.
+Create **8 screenshots**. Keep the same visual style, same device frame and short, readable captions.
 
-## 1. Onboarding and accessibility profile
+## 1. Welcome / Start learning
+
+Show:
+
+- `Linguax Accessible` hero
+- primary Start learning button
+- accessibility CTA
+- feature chips
+
+Text overlay:
+
+**Learn at your pace**
+
+## 2. Accessibility profile
 
 Show:
 
@@ -15,24 +28,48 @@ Show:
 - accessibility profile selector
 - high contrast / large text / voice / reduce motion / focus mode options
 
-Suggested caption:
+Text overlay:
 
-**Start with the accessibility setup that fits you.**
+**Choose your accessibility profile**
 
-## 2. Lesson screen
+## 3. English lesson
 
 Show:
 
-- course title
+- English basics course
 - progress bar
 - lesson list
 - unlocked and locked progression
 
-Suggested caption:
+Text overlay:
 
-**Learn step by step with clear progress.**
+**Learn English step by step**
 
-## 3. Quiz screen
+## 4. Romanian lesson
+
+Show:
+
+- Romanian basics course
+- readable lesson cards
+- RO / EN bilingual guidance
+
+Text overlay:
+
+**Practice Romanian basics**
+
+## 5. Sign language lesson
+
+Show:
+
+- Basic sign language path
+- gesture lesson titles
+- visual / gesture description question
+
+Text overlay:
+
+**English, Romanian and sign language basics**
+
+## 6. Quiz
 
 Show:
 
@@ -41,75 +78,49 @@ Show:
 - readable contrast
 - feedback area if possible
 
-Suggested caption:
+Text overlay:
 
-**Practice with accessible quizzes after each unit.**
+**Voice support and focus mode**
 
-## 4. Focus mode
-
-Show:
-
-- focus mode enabled
-- simplified interface
-- reduced distractions
-- hidden non-essential areas
-
-Suggested caption:
-
-**Focus mode reduces distractions while learning.**
-
-## 5. Sign language intro
-
-Show:
-
-- Sign language intro path
-- gesture lesson titles
-- visual / gesture description question
-
-Suggested caption:
-
-**Explore sign language basics with visual descriptions.**
-
-## 6. Progress profile
+## 7. Progress dashboard
 
 Show:
 
 - learner profile
 - progress percentage
 - completed lessons
-- active accessibility settings
-- export progress action
+- export progress
+- import progress
+- reset progress
+- mistake review if possible
 
-Suggested caption:
+Text overlay:
 
-**Track and export your learning progress.**
+**Track progress locally**
 
-## 7. Certificate
-
-Show:
-
-- certificate screen
-- completion badge / certificate preview
-- download / save / print action
-
-Suggested caption:
-
-**Complete a path and unlock your certificate.**
-
-## 8. Accessibility audit
+## 8. Certificate + Accessibility audit
 
 Show:
 
-- total accessibility score
-- contrast status
-- keyboard navigation status
-- voice mode status
-- reduced motion status
-- focus mode status
+- certificate preview
+- Download / Print certificate button
+- accessibility audit score
+- contrast, keyboard, voice and focus status
 
-Suggested caption:
+Text overlay:
 
-**Built around accessibility from the first screen.**
+**Earn a completion certificate**
+
+## Required listing messages
+
+Use these as Google Play graphic text options:
+
+- Learn at your pace
+- Choose your accessibility profile
+- Voice support and focus mode
+- English, Romanian and sign language basics
+- Track progress locally
+- Earn a completion certificate
 
 ## Capture notes
 
@@ -118,3 +129,25 @@ Suggested caption:
 - Keep text large and avoid clutter.
 - Capture both default and accessibility-enabled states.
 - Use the same sample learner name across all screenshots.
+- Do not show private data, real learner data or browser debugging UI.
+
+## Suggested folder
+
+Place final screenshots in:
+
+```text
+screenshots/
+```
+
+Suggested names:
+
+```text
+01-welcome-start-learning.png
+02-accessibility-profile.png
+03-english-lesson.png
+04-romanian-lesson.png
+05-sign-language-lesson.png
+06-quiz.png
+07-progress-dashboard.png
+08-certificate-accessibility-audit.png
+```
