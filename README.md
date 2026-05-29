@@ -1,33 +1,41 @@
 # Linguax Accessible: Learn Languages
 
-Accessibility-first bilingual language learning app with voice, focus mode and progress tracking.
+Learn English, Romanian and basic sign language with accessibility-first lessons.
 
 Live demo: https://laurandreea10.github.io/learnflow-accessible/
 
-## Repo metadata to add in GitHub
+## Short description
 
-Description:
-Accessibility-first bilingual language learning app with voice, focus mode and progress tracking.
+Learn English, Romanian and basic sign language with accessibility-first lessons.
 
-Website:
-https://laurandreea10.github.io/learnflow-accessible/
+## Product positioning
 
-Topics:
-accessibility, education, language-learning, a11y, javascript, github-pages, web-speech-api
+Linguax Accessible is an accessibility-first bilingual language learning app with voice support, high contrast, focus mode, RO / EN interface, local progress tracking, mistake review and a visual completion certificate.
 
-## Implemented roadmap
+The repository name can remain `learnflow-accessible`, but the public product name is **Linguax Accessible: Learn Languages**.
 
+## Play Store MVP features
+
+- Strong commercial hero for Linguax Accessible
+- English, Romanian and basic sign language learning paths
+- Voice support through browser / device speech features
+- High contrast mode
+- Focus mode
+- Large text mode
+- Dyslexia-friendly font option
 - RO / EN interface switch
-- 10 English basics lessons
-- 10 Romanian basics lessons
-- 8 Sign language intro lessons
-- quiz after each unit
-- local progress tracking with localStorage
-- exportable progress report as JSON
-- certificate screen after completing a learning path
-- downloadable certificate as HTML
-- dedicated Accessibility Audit tab
-- mobile-friendly layout
+- Progress dashboard
+- Certificate preview
+- Download / print certificate
+- Accessibility audit score
+- Mistake Review tab
+- Practice again from saved mistakes
+- Reset progress
+- Export progress report
+- Import progress report
+- Privacy Policy page
+- PWA manifest
+- Service worker cache for GitHub Pages
 
 ## Accessibility features
 
@@ -45,50 +53,91 @@ Supported options include high contrast, large text, voice mode, image descripti
 
 10 beginner lessons for international learners covering equivalent Romanian vocabulary and short phrases.
 
-### Sign language intro
+### Basic sign language
 
 8 introductory visual lessons with gesture descriptions for hello, thank you, name, me / you, nice to meet you, family, help and a mini visual dialogue.
 
-## Play Store screenshot plan
+## Privacy
 
-Recommended screenshots:
+Linguax Accessible does not collect, sell or share personal data.
 
-1. Onboarding and accessibility profile
-2. Lesson screen
-3. Quiz screen
-4. Focus mode
-5. Sign language intro
-6. Progress profile
-7. Certificate
-8. Accessibility audit
+Learning progress, selected language, accessibility preferences and saved mistakes are stored locally on the user’s device using browser localStorage.
 
-Detailed checklist: docs/play-store-screenshots.md
+The app does not require account creation, does not use a backend server, does not use advertising SDKs and does not send learning data to external services.
+
+Voice features may use the browser or device speech capabilities. No voice data is stored by this app.
+
+Privacy page: https://laurandreea10.github.io/learnflow-accessible/privacy.html
+
+## Repo metadata to add in GitHub
+
+Description:
+
+```text
+Accessibility-first bilingual language learning app with voice support, focus mode, progress tracking and certificate.
+```
+
+Website:
+
+```text
+https://laurandreea10.github.io/learnflow-accessible/
+```
+
+Topics:
+
+```text
+accessibility
+a11y
+education
+language-learning
+javascript
+pwa
+github-pages
+web-speech-api
+inclusive-design
+```
+
+Recommended release:
+
+```text
+v1.0.0-google-play-mvp
+```
+
+## Google Play screenshot plan
+
+Create 8 screenshots:
+
+1. Welcome / Start learning
+2. Accessibility profile
+3. English lesson
+4. Romanian lesson
+5. Sign language lesson
+6. Quiz
+7. Progress dashboard
+8. Certificate + Accessibility audit
+
+Suggested screenshot text overlays:
+
+- Learn at your pace
+- Choose your accessibility profile
+- Voice support and focus mode
+- English, Romanian and sign language basics
+- Track progress locally
+- Earn a completion certificate
+
+Detailed checklist: `docs/play-store-screenshots.md`
 
 ## Progress export
 
-The Profile tab includes an Export progress action. It downloads a JSON report with learner name, selected course, completed lessons, progress percentage, XP, gems, accessibility score, active settings and export date.
+The Profile tab includes an Export progress action. It downloads a JSON report with learner name, selected course, completed lessons, progress percentage, XP, gems, accessibility score, active settings, saved mistakes and export date.
 
 ## Certificate
 
 After completing all lessons in the selected path, the Certificate tab unlocks a completion certificate. The certificate can be downloaded as an HTML file and saved or printed from the browser.
 
-Next certificate polish:
-
-- add a visible Save / Print button
-- wire a print-specific certificate stylesheet into the app
-- make the certificate more visual for Play Store screenshots
-
-Starter print stylesheet: docs/certificate-print.css
-
 ## Accessibility Audit
 
 The Audit tab displays a product-facing accessibility score for contrast, keyboard navigation, voice mode, image descriptions, reduced motion, screen reader labels, simplified navigation and focus mode.
-
-## Automated Lighthouse checks
-
-This repository includes a GitHub Actions workflow for Lighthouse CI at .github/workflows/lighthouse.yml.
-
-The workflow checks the GitHub Pages URL and uploads the Lighthouse reports as an artifact.
 
 ## Zero-cost architecture
 
@@ -101,16 +150,16 @@ The project remains fully static: no backend, no database, no API keys, no paid 
 - JavaScript
 - Web Speech API
 - localStorage
+- PWA manifest
+- Service worker
 - GitHub Pages
-- Lighthouse CI
 
 ## Next improvements
 
-- split the single-file app into HTML, CSS and JS files
-- add richer lesson copy
-- wire the certificate print CSS directly into the app
-- add Play Store screenshots and metadata
-- tighten Lighthouse thresholds after the first audit run
+- Add PNG icon exports: `icons/icon-192.png`, `icons/icon-512.png`, `icons/maskable-512.png`
+- Add final Play Store screenshot images inside `screenshots/`
+- Run Lighthouse after GitHub Pages deploy refresh
+- Package with Bubblewrap / TWA only after Play Store listing assets are ready
 
 ## Author
 
