@@ -30,6 +30,8 @@ Linguax Accessible is an inclusive language learning app designed for learners w
 
 Learn beginner English, Romanian and basic sign language through short lessons, quizzes, progress tracking and a completion certificate.
 
+Important notice: Linguax Accessible is an educational simulator for learning and preparation only. It is not an official exam platform and does not guarantee any exam result. Progress data is saved locally in the user's browser.
+
 Accessibility-first features:
 
 - High contrast mode
@@ -77,6 +79,8 @@ Use this only if the final app still has no backend, no analytics SDKs and no ad
 - Analytics SDK: no
 - Backend server: no
 - Voice data stored by app: no
+- Official exam platform: no
+- Exam result guarantee: no
 
 ## Privacy Policy URL
 
