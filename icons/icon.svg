@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Linguax Accessible icon</title>
+  <desc id="desc">Dark rounded square app icon with Linguax L mark, accessibility ring and warm gold accent.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#18182a"/>
+      <stop offset="1" stop-color="#09090f"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe179"/>
+      <stop offset="1" stop-color="#f5a623"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="172" fill="none" stroke="#9d71ff" stroke-width="22" opacity=".86"/>
+  <circle cx="365" cy="151" r="42" fill="url(#gold)"/>
+  <path d="M158 144h82c78 0 132 49 132 116s-54 116-132 116h-82V144Z" fill="#f7f3ff" opacity=".96"/>
+  <path d="M209 196v128h34c42 0 72-27 72-64s-30-64-72-64h-34Z" fill="#09090f"/>
+  <path d="M146 400h220" stroke="url(#gold)" stroke-width="28" stroke-linecap="round"/>
+</svg>
