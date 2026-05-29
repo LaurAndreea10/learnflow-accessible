@@ -1,145 +1,104 @@
-# LINGUAX Accessible 🤟
+# LINGUAX Accessible
 
-**LINGUAX Accessible** is a zero-cost, accessibility-first language learning demo inspired by gamified education platforms, but with its own visual identity, interaction model, and inclusive UX direction.
+Accessibility-first bilingual learning app prototype, built as a zero-cost static front-end project for GitHub Pages.
 
-Live demo: https://laurandreea10.github.io/learnflow-accessible/
+## Implemented roadmap
 
-## ✨ Overview
+This version adds the Google Play readiness improvements from the product roadmap:
 
-LINGUAX Accessible helps users start a personalized learning path by selecting:
+- RO / EN interface switch
+- 10 English basics lessons
+- 10 Romanian basics lessons
+- 8 Sign language intro lessons
+- quiz after each unit
+- local progress tracking with localStorage
+- exportable progress report as JSON
+- certificate screen after completing a learning path
+- downloadable certificate as HTML
+- dedicated Accessibility Audit tab
+- mobile-friendly layout
 
-- first name
-- target language
-- learning level
-- disability / accessibility profile
-- visual accessibility preferences before entering the app
+## Accessibility features
 
-The app is built as a static front-end prototype, using mock data and browser-only features. It can run entirely on GitHub Pages with no paid services.
+The app includes accessibility profiles and settings for:
 
-## ♿ Accessibility-first features
+- blind users
+- low vision users
+- dyslexia
+- deaf or hard-of-hearing users
+- reduced mobility
+- ADHD / focus mode
 
-### Multi-disability profiles
+Supported options include:
 
-The onboarding includes quick profiles for:
-
-- 🦯 Blind users
-- 🔍 Low vision users
-- 📖 Dyslexia
-- 🧏 Deaf / hard-of-hearing users
-- ⌨️ Reduced mobility
-- 🎯 ADHD / focus mode
-
-Each profile automatically enables suitable settings such as:
-
-- voice mode
 - high contrast
 - large text
+- voice mode through the browser Web Speech API
 - image and icon descriptions
 - reduced motion
 - simplified navigation
 - keyboard navigation
-- text feedback
+- focus mode
+- screen reader friendly live status region
+
+## Learning paths
+
+### English basics
+
+10 beginner lessons covering greetings, polite phrases, people, numbers, colors, family, home, food, time and travel basics.
+
+### Romanian basics
+
+10 beginner lessons for international learners covering equivalent Romanian vocabulary and short phrases.
+
+### Sign language intro
+
+8 introductory visual lessons with gesture descriptions for hello, thank you, name, me / you, nice to meet you, family, help and a mini visual dialogue.
+
+## Progress export
+
+The Profile tab includes an Export progress action. It downloads a JSON report with:
+
+- learner name
+- selected course
+- completed lessons
+- total lessons
+- progress percentage
+- XP
+- gems
+- accessibility score
+- active accessibility settings
+- export date
+
+## Certificate
+
+After completing all lessons in the selected path, the Certificate tab unlocks a completion certificate. The certificate can be downloaded as an HTML file and saved or printed from the browser.
+
+## Accessibility Audit
+
+The Audit tab displays a product-facing accessibility score and criteria for:
+
+- contrast
+- keyboard navigation
+- voice mode
+- image descriptions
+- reduced motion
+- screen reader labels
+- simplified navigation
 - focus mode
 
-### Visual impairment onboarding
+## Zero-cost architecture
 
-Before starting the course, users can manually enable:
-
-- high contrast
-- large text
-- image descriptions
-- read aloud
-- automatic screen reading
-- reduced motion
-- simplified navigation
-
-### Read aloud support
-
-The app uses the browser's **Web Speech API** for text-to-speech features:
-
-- read current screen
-- stop voice
-- automatic reading when navigating
-- read lesson questions and answer feedback
-
-### Accessibility Score dashboard
-
-The Accessibility tab includes a live score panel showing whether these features are active:
-
-- Contrast
-- Keyboard navigation
-- Voice mode
-- Image descriptions
-- Reduce motion
-- Screen reader labels
-- Simplified navigation
-- Focus mode
-
-## 🧾 Accessibility Onboarding Summary
-
-After completing the setup form, users see a confirmation screen with:
-
-- first name
-- selected language
-- selected level
-- selected disability/accessibility type
-- active accessibility settings
-
-This makes the personalization flow clear before entering the app.
-
-## 🤟 Sign language path
-
-The sign language path includes more realistic beginner lessons with gesture descriptions:
-
-- Salut
-- Mulțumesc
-- Nume
-- Eu și Tu
-- Încântat
-- Familie
-- Ajutor
-- Mini-dialog: Salut + Nume + Ajutor
-
-Example gesture description:
-
-> Salut: ridică mâna dominantă lângă umăr și mișcă ușor palma spre exterior.
-
-## 🎯 ADHD / Focus Mode
-
-Focus Mode reduces cognitive load by:
-
-- hiding decorative elements
-- hiding leaderboard and shop navigation
-- showing one recommended next lesson
-- displaying a gentle 5-minute focus timer
-- keeping the next action clear and visible
-
-## 🧪 Mock backend approach
-
-The app currently uses local mock data inside the static JavaScript file:
-
-- mock user profile
-- mock course units
-- mock lessons
-- mock questions
-- mock shop items
-- mock leaderboard
-
-Progress is stored locally with `localStorage`.
-
-## 💸 Zero-cost architecture
-
-This project is designed to run without paid services:
+The project remains fully static:
 
 - no backend server
 - no database
 - no API keys
 - no paid hosting
-- no external auth provider
-- no paid analytics
+- browser-only state with localStorage
 - GitHub Pages compatible
 
-## 🛠️ Tech stack
+## Tech stack
 
 - HTML
 - CSS
@@ -148,30 +107,14 @@ This project is designed to run without paid services:
 - localStorage
 - GitHub Pages
 
-## 🚀 Deployment
+## Next improvements
 
-The project is deployed as a static page on GitHub Pages.
+- split the single-file app into HTML, CSS and JS files
+- add richer lesson copy
+- add a print-optimized certificate stylesheet
+- add Play Store screenshots and metadata
+- add automated Lighthouse and accessibility checks
 
-Recommended GitHub Pages settings:
+## Author
 
-- Source: `Deploy from a branch`
-- Branch: `main`
-- Folder: `/ root`
-
-## 🧭 Roadmap
-
-Possible next improvements:
-
-- certificates after completing a learning path
-- more sign language gesture lessons
-- exportable progress report
-- bilingual Romanian / English interface
-- separate lesson editor mock
-- accessibility audit checklist page
-- portfolio case study section
-
-## 👩‍💻 Author
-
-Created by **Laura Andreea** as an accessibility-first front-end product demo.
-
-GitHub: https://github.com/LaurAndreea10
+Created by Laura Andreea as an accessibility-first front-end product demo.
